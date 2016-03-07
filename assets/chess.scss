@@ -1,0 +1,38 @@
+@import "reset.css";
+$width: 50%;
+@mixin border() {
+          border:none red thin;
+}
+body{
+  width:$width;
+  @include border();
+  margin: 0 auto;
+}
+.box{
+  position: relative;
+  width:(100% / 8.3);
+  // background-color: grey;
+  @include border();
+  border:solid lightgrey thin;
+  float:left;
+  text-align: center;
+  vertical-align: top;
+}
+
+// .box:nth-child(2n+1){
+//   background-color: white;
+// }
+
+.box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  font-size: 3em;
+  position: absolute;
+  padding-top:25%;
+  width: 100%;
+  height: 100%;
+}

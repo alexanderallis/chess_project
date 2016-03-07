@@ -1,0 +1,28 @@
+@import url(reset.css);
+body {
+  width: 50%;
+  border: none red thin;
+  margin: 0 auto; }
+
+.box {
+  position: relative;
+  width: 12.04819%;
+  border: none red thin;
+  border: solid lightgrey thin;
+  float: left;
+  text-align: center;
+  vertical-align: top; }
+
+.box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%; }
+
+.content {
+  font-size: 3em;
+  position: absolute;
+  padding-top: 25%;
+  width: 100%;
+  height: 100%; }
+
+/*# sourceMappingURL=chess.css.map */
